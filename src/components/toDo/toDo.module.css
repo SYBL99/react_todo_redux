@@ -1,0 +1,62 @@
+.todo__item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+.label {
+    position: relative;
+    font-size: 1rem;
+    top: -2px;
+}
+.checkbox {
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    margin-right: 5px;
+}
+
+.clBtn {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.clBtn:before {
+    content: '+';
+    color: #337AB7;
+    position: absolute;
+    z-index: 2;
+    transform: rotate(45deg);
+    font-size: 50px;
+    line-height: 1;
+    top: -5px;
+    left: 3.3px;
+    transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+}
+
+.clBtn:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background: #337AB7;
+    z-index: 1;
+    transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+    transform: scale(0.01);
+}
+
+.clBtn:hover:after {
+    transform: scale(1);
+}
+
+.clBtn:hover:before {
+    transform: scale(0.8) rotate(45deg);
+    color: #fff;
+}

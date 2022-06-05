@@ -1,0 +1,86 @@
+@import url("null_style");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+*, ::before, ::after {
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+main {
+  width: 70%;
+  padding: 15px;
+  margin: 0 auto;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
+  background: linear-gradient(white, white);
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#027dea), to(#add8e6));
+  background: linear-gradient(#027dea, #add8e6);
+  font-size: 2rem;
+  height: 100vh;
+  text-align: center;
+}
+
+form {
+  width: 70vw;
+  height: 30vh;
+}
+
+.btn__wrapper {
+  margin: 15px 0 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.btn {
+  padding: 5px 10px;
+  font-size: 1.2rem;
+}
+
+.form__input {
+  display: block;
+  border: 2px solid gold;
+  padding: 5px;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.form__btn {
+  width: 40%;
+  color: white;
+  font-size: 1rem;
+  padding: 5px;
+  background-color: #1ab8ec;
+}
+
+.form__btn:hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-box-shadow: 0 0 0 2px #cbd6ee;
+          box-shadow: 0 0 0 2px #cbd6ee;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=index.css.map */
