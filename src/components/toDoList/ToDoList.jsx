@@ -1,6 +1,8 @@
 import ToDoItem from "../toDo/toDo";
+import { useSelector } from "react-redux";
 
-const ToDoList = ({children, remove, save}) => {
+const ToDoList = ({remove, save}) => {
+    const children = useSelector((state) => state.setToDo.value)
     return (
         <div className="todo__list">
             {children.map(toDo => {let entries = Object.entries(toDo)
